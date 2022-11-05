@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h1>Statistic</h1>
+<br />
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h3>@ViewBag.SumCategori </h3>
+                <p>Toplam Kategori Sayısı</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h3>@ViewBag.HeadYazilimSum</h3>
+                <p>Yazılım Kategorisi Başlık Sayısı</p>
+            </div>  
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h3>@ViewBag.WriterCount</h3>
+                <p>Yazar Adında "a" Geçenler</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="small-box bg-danger">
+            <div class="inner">
+                <h3>@ViewBag.MaxCategoryName</h3>
+                <p>En Fazla Başlığa Sahip Kategori</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <div class="small-box" style="background-color:purple;color:white">
+            <div class="inner">
+                <h3>@ViewBag.CategoryMaxMinDifference</h3>
+                <p>Kategori True/False Farkı</p>
+            </div>
+        </div>
+    </div>
+</div>
